@@ -1,0 +1,18 @@
+jar {
+    enabled(true)
+}
+bootJar {
+    enabled(false)
+}
+ext {
+    mybatisPlusVersion = "3.4.2"
+}
+dependencies {
+    api(
+            project(":core"),
+            "com.baomidou:mybatis-plus-boot-starter:${mybatisPlusVersion}"
+    )
+
+}
+
+

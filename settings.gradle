@@ -1,0 +1,6 @@
+rootProject.name = 'winsin'
+include 'core'
+include 'jpa'
+include 'web'
+include 'mybatis'
+include 'winsim-cloud-spring-boot-starter'

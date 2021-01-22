@@ -1,0 +1,14 @@
+jar{
+    enabled(true)
+}
+dependencies {
+    api(
+            project(":web"),
+            project(":jpa"),
+            project(":mybatis"),
+    )
+    implementation(
+            "org.springframework.boot:spring-boot-autoconfigure"
+    )
+}
+

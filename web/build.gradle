@@ -1,0 +1,15 @@
+jar {
+    enabled(true)
+}
+bootJar {
+    enabled(false)
+}
+
+dependencies {
+    api(
+            project(":core"),
+            'org.springframework.boot:spring-boot-starter',
+            'org.springframework.boot:spring-boot-starter-web',
+    )
+}
+

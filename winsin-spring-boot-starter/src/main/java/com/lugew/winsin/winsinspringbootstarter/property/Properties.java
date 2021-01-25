@@ -8,7 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  * @author 夏露桂
  * @since 2021/1/21 12:27
  */
-@ConfigurationProperties(prefix = "winsim-cloud")
+@ConfigurationProperties(prefix = "winsin")
 @Getter
 @Setter
 public class Properties {

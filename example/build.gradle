@@ -1,0 +1,15 @@
+ext {
+    mysqlVersion = "8.0.22"
+    queryDslVersion = "4.4.0"
+    openapiVersion = "1.5.2"
+}
+
+dependencies {
+    implementation(
+            "org.springdoc:springdoc-openapi-ui:${openapiVersion}",
+            project(":winsin-spring-boot-starter")
+    )
+    runtimeOnly(
+            "mysql:mysql-connector-java:${mysqlVersion}"
+    )
+}

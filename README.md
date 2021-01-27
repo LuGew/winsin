@@ -1,5 +1,8 @@
 # Winsin
 致力于简化spring-boot为基础的web应用开发
+## 特性
+### MyBatis
+
 # 使用
 
 ## 引入依赖

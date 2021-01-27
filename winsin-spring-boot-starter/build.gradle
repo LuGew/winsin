@@ -1,8 +1,14 @@
-jar{
+jar {
     enabled(true)
 }
-bootJar{
+bootJar {
     enabled(false)
+}
+ext {
+    mybatisThymeleafVersion = "1.0.2"
+    mybatisVelocityVersion = "2.1.0"
+    mybatisFreemarkerVersion = "1.2.2"
+
 }
 dependencies {
     api(
@@ -12,6 +18,14 @@ dependencies {
     )
     implementation(
             "org.springframework.boot:spring-boot-autoconfigure"
+    )
+
+    compileOnly(
+            // https://mvnrepository.com/artifact/org.mybatis.scripting/mybatis-thymeleaf
+            "org.mybatis.scripting:mybatis-thymeleaf:${mybatisThymeleafVersion}",
+            "org.mybatis.scripting:mybatis-velocity:${mybatisVelocityVersion}",
+            "org.mybatis.scripting:mybatis-freemarker:${mybatisFreemarkerVersion}",
+
     )
 }
 

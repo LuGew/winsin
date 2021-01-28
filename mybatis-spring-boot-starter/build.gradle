@@ -1,6 +1,5 @@
 dependencies {
     api(
-            project(":core")
+            project(":mybatis")
     )
 }
-

@@ -1,5 +1,9 @@
 dependencies {
+    api(
+            project(":core")
+    )
 }
+
 jar {
     enabled(true)
 }

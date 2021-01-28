@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.AutoConfigurationImportFilter=com.lugew.winsin.winsinspringbootstarter.configuration.ConfigurationImportFilter
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.lugew.winsin.winsinspringbootstarter.configuration.AutoConfiguration,\
+  com.lugew.winsin.winsinspringbootstarter.configuration.MybatisPlusLanguageDriverAutoConfiguration,\
+  com.lugew.winsin.winsinspringbootstarter.configuration.MybatisPlusAutoConfiguration

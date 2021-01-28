@@ -6,11 +6,13 @@ bootJar {
 }
 ext {
     mybatisPlusVersion = "3.4.2"
+    mybatisVersion = "2.1.4"
 }
 dependencies {
     api(
             project(":core"),
-            "com.baomidou:mybatis-plus-boot-starter:${mybatisPlusVersion}"
+            "com.baomidou:mybatis-plus-boot-starter:${mybatisPlusVersion}",
+
     )
 
 }

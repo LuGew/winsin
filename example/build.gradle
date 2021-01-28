@@ -10,6 +10,8 @@ ext {
     queryDslVersion = "4.4.0"
     openapiVersion = "1.5.2"
     winsinVersion = "1.0.0-SNAPSHOT"
+    lombokVersion = "1.18.16"
+
 }
 
 group = 'com.github.lugew'
@@ -23,6 +25,9 @@ repositories {
         name '阿里云'
         url 'https://maven.aliyun.com/repository/public/'
     }
+    maven {
+        url 'https://jitpack.io'
+    }
     mavenCentral()
     google()
 }
@@ -34,8 +39,14 @@ dependencies {
             "org.springdoc:springdoc-openapi-ui:${openapiVersion}",
 //            project(":web-spring-boot-starter"),
 //            project(":mybatis-spring-boot-starter"),
-            "com.lugew.github.winsin:web-spring-boot-starter:${winsinVersion}",
-            "com.lugew.github.winsin:mybatis-spring-boot-starter:${winsinVersion}",
+            "com.github.lugew.winsin:web-spring-boot-starter:${winsinVersion}",
+            "com.github.lugew.winsin:mybatis-spring-boot-starter:${winsinVersion}",
+    )
+    compileOnly(
+            "org.projectlombok:lombok:${lombokVersion}"
+    )
+    annotationProcessor(
+            "org.projectlombok:lombok:${lombokVersion}"
     )
     runtimeOnly(
             "mysql:mysql-connector-java:${mysqlVersion}"

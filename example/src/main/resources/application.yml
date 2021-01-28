@@ -26,15 +26,9 @@ logging:
     org.springframework: DEBUG
     com.lugew.winsincloud: DEBUG
 
-
-
-
 mybatis-plus:
   global-config:
     db-config:
       logic-delete-field: deleted
       logic-delete-value: true
       logic-not-delete-value: false
-
-winsin:
-  enable-mybatis: true

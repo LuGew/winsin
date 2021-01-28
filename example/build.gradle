@@ -1,3 +1,10 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.6.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+    id 'java'
+    id 'idea'
+    id 'java-library'
+}
 ext {
     mysqlVersion = "8.0.22"
     queryDslVersion = "4.4.0"
@@ -5,13 +12,30 @@ ext {
     winsinVersion = "1.0.0-SNAPSHOT"
 }
 
+group = 'com.github.lugew'
+version = '1.0.0'
+sourceCompatibility = '11'
+targetCompatibility = '11'
+
+repositories {
+    mavenLocal()
+    maven {
+        name '阿里云'
+        url 'https://maven.aliyun.com/repository/public/'
+    }
+    mavenCentral()
+    google()
+}
+test {
+    useJUnitPlatform()
+}
 dependencies {
     implementation(
             "org.springdoc:springdoc-openapi-ui:${openapiVersion}",
-            project(":web-spring-boot-starter"),
-            project(":mybatis-spring-boot-starter"),
-//            "com.lugew.github.winsin:web-spring-boot-starter:${winsinVersion}",
-//            "com.lugew.github.winsin:mybatis-spring-boot-starter:${winsinVersion}",
+//            project(":web-spring-boot-starter"),
+//            project(":mybatis-spring-boot-starter"),
+            "com.lugew.github.winsin:web-spring-boot-starter:${winsinVersion}",
+            "com.lugew.github.winsin:mybatis-spring-boot-starter:${winsinVersion}",
     )
     runtimeOnly(
             "mysql:mysql-connector-java:${mysqlVersion}"

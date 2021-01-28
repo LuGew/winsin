@@ -3,3 +3,9 @@ dependencies {
             project(":mybatis")
     )
 }
+jar {
+    enabled(true)
+}
+bootJar {
+    enabled(false)
+}

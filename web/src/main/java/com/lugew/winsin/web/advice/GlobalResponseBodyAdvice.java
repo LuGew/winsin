@@ -1,10 +1,10 @@
 package com.lugew.winsin.web.advice;
 
+import com.lugew.winsin.core.Error;
+import com.lugew.winsin.core.exception.Exception;
 import com.lugew.winsin.web.Standard;
 import com.lugew.winsin.web.configuration.ExceptionConfigurationSupporter;
 import com.lugew.winsin.web.response.R;
-import com.lugew.winsin.core.Error;
-import com.lugew.winsin.core.exception.Exception;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.MethodParameter;
@@ -77,7 +77,7 @@ public class GlobalResponseBodyAdvice implements ResponseBodyAdvice<Object> {
     }
 
     private boolean isR(MethodParameter returnType) {
-        return "com.lugew.winsimcloud.web.response.R".equals(returnType.getParameterType().getName());
+        return "com.lugew.winsin.web.response.R".equals(returnType.getParameterType().getName());
     }
 
     private boolean isNotR(MethodParameter returnType) {

@@ -9,6 +9,8 @@ package com.lugew.winsin.core;
 public enum Error {
     INTERNAL_SERVER_ERROR("internal.server.error", "服务器内部错误"),
     USER_NOT_FOUND("user.not.found", "用户不存在"),
+    UPLOAD_FAILED("upload.failed", "上传失败"),
+    DELETE_FAILED("delete.failed", "删除失败"),
     NOT_FOUND("not.found", "未找到");
 
     private String code;

@@ -1,0 +1,19 @@
+ext {
+    minioVersion = '8.0.3'
+    cosVersion = '5.6.31'
+}
+dependencies {
+    api(
+            project(":core"),
+            "org.springframework.boot:spring-boot-starter",
+            "io.minio:minio:${minioVersion}",
+            "com.qcloud:cos_api:${cosVersion}"
+    )
+}
+
+jar {
+    enabled(true)
+}
+bootJar {
+    enabled(false)
+}

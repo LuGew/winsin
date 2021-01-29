@@ -19,6 +19,10 @@ public class Exception extends RuntimeException implements KeyValue<String> {
         setValue(arguments);
     }
 
+    public Exception(Object... arguments) {
+        setValue(arguments);
+    }
+
     public Exception(String message) {
         super(message);
         key = message;

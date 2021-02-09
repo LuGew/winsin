@@ -63,8 +63,6 @@ subprojects {
                 "org.spockframework:spock-core:${spockVersion}",
                 "net.bytebuddy:byte-buddy:${byteBuddyVersion}",
                 "org.objenesis:objenesis:${objenesisVersion}",
-
-
         )
     }
 }

@@ -4,6 +4,13 @@ include 'jpa'
 include 'web'
 include 'mybatis'
 include 'winsin-spring-boot-starter'
+project(':winsin-spring-boot-starter').projectDir = file("$rootDir/starter/winsin-spring-boot-starter")
+
 include 'web-spring-boot-starter'
+project(':web-spring-boot-starter').projectDir = file("$rootDir/starter/web-spring-boot-starter")
+
 include 'mybatis-spring-boot-starter'
+project(':mybatis-spring-boot-starter').projectDir = file("$rootDir/starter/mybatis-spring-boot-starter")
+
 include 'jpa-spring-boot-starter'
+project(':jpa-spring-boot-starter').projectDir = file("$rootDir/starter/jpa-spring-boot-starter")

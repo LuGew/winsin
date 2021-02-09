@@ -21,7 +21,7 @@ allprojects {
     apply plugin: 'idea'
     apply plugin: 'java-library'
 
-    group = 'com.lugew'
+    group = 'com.lugew.winsin'
     version = '1.2.0'
     sourceCompatibility = '11'
     targetCompatibility = '11'
